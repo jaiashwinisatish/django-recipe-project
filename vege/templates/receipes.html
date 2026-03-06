@@ -1,0 +1,73 @@
+
+
+<div class="container mt-5">
+
+   <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Add Receipe</h2>
+        <hr>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Receipe Name</label>
+    <input name="receipe_name" required type="text" class="form-control" >
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Receipe Description</label>
+    <textarea class="form-control" name="receipe_description" required ></textarea>
+  </div>
+
+    <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Receipe Image</label>
+    <input name="receipe_image" type="file" class="form-control" >
+  </div>
+
+  <button type="submit" class="btn btn-success">add receipe</button>
+</form>
+
+<div class="mt-5">
+    <div class="mx-auto col-6">
+    <form>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Search food</label>
+    <input name="search" type="text" class="form-control" >
+      
+  </div>
+<button type="submit" class="btn btn-primary">search</button>
+    </form>
+    </div> 
+</div>
+
+
+  {{receipes}}
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Recipe name</th>
+      <th>Recipe Description</th>
+      <th>Recipe Image</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for recipe in receipes %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{recipe.Recipe_name}}</td>
+      <td>{{recipe.Recipe_description}}</td>
+      <td>
+        <img src="/media/{{recipe.Recipe_image}}" style="height:100px">
+           <td>
+            <a href="/delete_receipe/{{recipe.id}}/" class="btn btn-danger m-2">delete</a>
+            <a href="/update_receipe/{{recipe.id}}/" class="btn btn-success">update</a>
+           </td>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+</div>
+

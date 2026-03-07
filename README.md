@@ -115,11 +115,9 @@ http://127.0.0.1:8000/receipes/
 ### Add Recipe Form
 ![Add Recipe Form](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%201.png)
 
-### Recipe List View
+### Recipe List View | Search Recipes
 ![Recipe List](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%202.png)
 
-### Search Recipes
-![Search Recipes](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%203.png)
 
 > 📝 *Replace the placeholder paths above with your actual screenshot filenames after adding them to a `/screenshots` folder.*
 

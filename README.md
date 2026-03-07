@@ -119,7 +119,6 @@ http://127.0.0.1:8000/receipes/
 ![Recipe List](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%202.png)
 
 
-> 📝 *Replace the placeholder paths above with your actual screenshot filenames after adding them to a `/screenshots` folder.*
 
 ---
 

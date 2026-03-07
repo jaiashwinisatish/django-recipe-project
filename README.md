@@ -113,20 +113,16 @@ http://127.0.0.1:8000/receipes/
 ## 📸 Screenshots
 
 ### Add Recipe Form
-<!-- Add screenshot of the Add Recipe form here -->
-![Add Recipe Form](screenshots/Create a RecipeProject in Django part 1.png)
+![Add Recipe Form](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%201.png)
 
 ### Recipe List View
-<!-- Add screenshot of the recipe table listing here -->
-![Recipe List](screenshots/Create a RecipeProject in Django part 2.png)
+![Recipe List](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%202.png)
 
 ### Search Recipes
-<!-- Add screenshot of the search functionality here -->
-![Search Recipes](screenshots/Create a RecipeProject in Django part 3.png)
+![Search Recipes](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%203.png)
 
 ### Delete Action
-<!-- Add screenshot showing the delete button/confirmation here -->
-![Delete Recipe](screenshots/Create a RecipeProject in Django part 3.png)
+![Delete Recipe](screenshots/Create%20a%20RecipeProject%20in%20Django%20part%203.png)
 
 > 📝 *Replace the placeholder paths above with your actual screenshot filenames after adding them to a `/screenshots` folder.*
 

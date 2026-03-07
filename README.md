@@ -1,1 +1,176 @@
-django-recipe-project...
+# 🍽️ Django Recipe Project
+
+> A simple Recipe Management Web Application built with Python & Django — developed as a hands-on learning project to strengthen backend development skills.
+
+---
+
+## 📌 Project Description
+
+This is a lightweight Recipe Management System that allows users to **add, view, update, delete, and search** recipes through a clean web interface. The project was built manually from scratch to deeply understand core Django concepts — without relying on AI-generated or vibe-coded shortcuts. Every line was written with the intent to learn and practice.
+
+---
+
+## ✨ Features
+
+- ➕ **Add Recipe** — Submit a new recipe with a name, description, and image
+- 📋 **View Recipes** — Browse all recipes in a structured table layout
+- ✏️ **Update Recipe** — Edit existing recipe details
+- 🗑️ **Delete Recipe** — Remove a recipe from the list
+- 🔍 **Search Recipe** — Filter recipes by name using the search bar
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Core programming language |
+| Django | Backend web framework |
+| SQLite | Default database (development) |
+| HTML | Template structure |
+| Bootstrap | Frontend styling & responsive layout |
+
+---
+
+## 📁 Project Structure
+
+```
+django-recipe-project/
+│
+├── recipeproject/          # Main Django project settings
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── recipes/                # Recipes app
+│   ├── migrations/         # Database migrations
+│   ├── templates/          # HTML templates
+│   │   └── recipes/
+│   ├── models.py           # Recipe model definition
+│   ├── views.py            # CRUD logic & views
+│   ├── urls.py             # App-level URL routing
+│   └── admin.py            # Django admin configuration
+│
+├── media/                  # Uploaded recipe images
+├── manage.py               # Django management utility
+└── requirements.txt        # Project dependencies
+```
+
+---
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+- Python 3.x installed
+- pip package manager
+
+### Steps
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/jaiashwinisatish/django-recipe-project.git
+cd django-recipe-project
+```
+
+**2. Create and activate a virtual environment**
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS/Linux
+python -m venv venv
+source venv/bin/activate
+```
+
+**3. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Apply migrations**
+```bash
+python manage.py migrate
+```
+
+**5. (Optional) Create a superuser for Django Admin**
+```bash
+python manage.py createsuperuser
+```
+
+**6. Run the development server**
+```bash
+python manage.py runserver
+```
+
+**7. Open in browser**
+```
+http://127.0.0.1:8000/receipes/
+```
+
+---
+
+## 📸 Screenshots
+
+### Add Recipe Form
+<!-- Add screenshot of the Add Recipe form here -->
+![Add Recipe Form](screenshots/add-recipe.png)
+
+### Recipe List View
+<!-- Add screenshot of the recipe table listing here -->
+![Recipe List](screenshots/recipe-list.png)
+
+### Search Recipes
+<!-- Add screenshot of the search functionality here -->
+![Search Recipes](screenshots/search-recipes.png)
+
+### Delete Action
+<!-- Add screenshot showing the delete button/confirmation here -->
+![Delete Recipe](screenshots/delete-recipe.png)
+
+> 📝 *Replace the placeholder paths above with your actual screenshot filenames after adding them to a `/screenshots` folder.*
+
+---
+
+## 📚 Learning Outcomes
+
+Through building this project, I gained practical experience with:
+
+- **Django Models** — Defining database schema using Python classes
+- **Django Views** — Writing function-based views for CRUD operations
+- **Django Templates** — Rendering dynamic HTML using Django's template engine
+- **URL Routing** — Mapping URLs to views using `urls.py`
+- **Django ORM** — Querying the database without writing raw SQL
+- **Django Admin Panel** — Managing data through the built-in admin interface
+- **Media File Handling** — Uploading and displaying images in Django
+- **Form Handling** — Processing POST requests and form data
+- **Search Functionality** — Filtering querysets based on user input
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Add user authentication (login/register) so each user manages their own recipes
+- [ ] Add recipe categories and tags for better organization
+- [ ] Implement pagination for large recipe lists
+- [ ] Add a recipe detail page with full instructions and ingredients
+- [ ] Migrate from SQLite to PostgreSQL for production readiness
+- [ ] Deploy the project to a cloud platform (Heroku / Railway / Render)
+- [ ] Add recipe ratings and reviews feature
+- [ ] Improve UI with a more modern design
+
+---
+
+## 👩‍💻 Author
+
+**Jaiashwini Satish**
+
+- 🔗 GitHub: [@jaiashwinisatish](https://github.com/jaiashwinisatish)
+
+---
+
+> ⚠️ **Note:** This project was built manually as a learning exercise. All code was written by hand to understand Django fundamentals — not generated by AI tools or vibe coding.
+
+---
+
+⭐ *If you found this project helpful or interesting, feel free to give it a star!*

@@ -114,7 +114,7 @@ http://127.0.0.1:8000/receipes/
 
 ### Add Recipe Form
 <!-- Add screenshot of the Add Recipe form here -->
-![Add Recipe Form](screenshots/add-recipe.png)
+![Add Recipe Form](screenshots/Create a RecipeProject in Django part 1.png)
 
 ### Recipe List View
 <!-- Add screenshot of the recipe table listing here -->
